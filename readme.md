@@ -2,10 +2,11 @@
 - clone this repository
 - rename the `.env.dev.sample` to `.env.dev`
 - run `docker-compose up --build`, this should start the project
-- to run the tests - `docker-compose exec web pytest`
+- to run the tests - `docker-compose exec web pytest`.
 
 # Usage
-- `curl "http://127.0.0.1/rates?date_from=2016-01-01&date_to=2016-01-10&origin=CNSGH&destination=north_europe_main"`
+- Hit `"http://127.0.0.1:5000/rates?date_from=2016-01-01&date_to=2016-01-10&origin=CNSGH&destination=north_europe_main"` from any
+    browser
 
 # Data Defination
 

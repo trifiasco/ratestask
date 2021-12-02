@@ -30,8 +30,8 @@ def create_app(test_config=None):
     from . import db
     db.init_app(app)
 
-    # register blueprints
-    from . import ratesapi
-    app.register_blueprint(ratesapi.bp)
+    # register api blueprints
+    from .api import rates
+    app.register_blueprint(rates.bp)
 
     return app
